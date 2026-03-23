@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+<titulo>SMOKE HOUSE MENU</titulo>
+<plato tipo="entrantes"><!-- 6 -->
+    <nombre>Nachos con queso cheddar y guacamole</nombre>
+    <precio>8€</precio>
+    <descripcion>Versión TEX-MEX del plato de orígen Mexicano. Consiste en totopos de maíz fritos, cubiertos con una salsa de queso fundido y acompañados de una crema de aguacate fresca.</descripcion>
+    <calorias>1000 kcal EL BOL COMPLETO</calorias>
+    <marcadores>
+        <categoria>Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+    </marcadores>
+</plato>
+<plato tipo="entrantes">
+    <nombre>Tiras de pollo con queso fundido</nombre>
+    <precio>5€</precio>
+    <descripcion>Solomillos de pollo marinados, empanados en panko crujiente y cubiertos con una generosa capa de mezcla de quesos mozzarella fundidos.</descripcion>
+    <calorias>800 kcal LA RACIÓN COMPLETA</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Huevo</categoria>
+    </marcadores>
+</plato>
+<plato tipo="entrantes">  
+    <nombre>Entrecot (300g) con patatas fritas</nombre>
+    <precio>17€</precio>
+    <descripcion>Corte seleccionado de lomo alto de ternera a la plancha, servido con patatas cortadas a mano y fritas en aceite de oliva virgen.</descripcion>
+    <calorias>900 kcal </calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Lácteos</categoria>
+    </marcadores>
+</plato>
+<plato tipo="entrantes">
+    <nombre>Costillas (450 g) con salsa barbacoa</nombre>
+    <precio>19€</precio>
+    <descripcion>Costillar de cerdo cocinado a baja temperatura para una textura tierna que se desprende del hueso, lacado con nuestra salsa barbacoa ahumada artesanal.</descripcion>
+    <calorias>1200 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+    </marcadores>
+</plato>
+<plato tipo="entrantes">
+    <nombre>Mac &amp; Cheese al Horno</nombre>
+    <precio>15€</precio>
+    <descripcion>Pasta 'elbow' envuelta en una sedosa salsa de cuatro quesos, gratinada con una costra de pan rallado y parmesano.</descripcion>
+    <calorias>800 kcal</calorias>
+    <marcadores>
+        <categoria>Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Huevo</categoria>
+        <categoria>Mostaza</categoria>
+    </marcadores>
+</plato>
+<plato tipo="entrantes">
+    <nombre>Buffalo Wings</nombre>
+    <precio>10€</precio>
+    <descripcion>Alitas de pollo fritas al estilo tradicional de Buffalo, bañadas en salsa picante original y servidas con bastoncitos de apio y salsa de queso azul.</descripcion>
+    <calorias>700 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Apio</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Huevo</categoria>
+    </marcadores>
+</plato>
+<plato tipo="hamburguesas"><!-- 8 -->
+    <nombre>The OG Smash (Doble)</nombre>
+    <precio>13,50 €</precio>
+    <descripcion>Dos discos de 100g de ternera, doble cheddar, cebolla picada y Salsa de la Casa. Servida con patatas fritas.</descripcion>
+    <calorias>1100 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Huevo</categoria>
+        <categoria>Mostaza</categoria>
+    </marcadores>
+</plato>
+<plato tipo="hamburguesas">
+    <nombre>Porky-Smash Deluxe</nombre>
+    <precio>16€</precio>
+    <descripcion>Doble disco de 100g, Pulled Pork ahumado, queso Monterrey Jack y pepinillos. Servida con patatas fritas.</descripcion>
+    <calorias>1320 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Soja</categoria>
+        <categoria>Sulfitos</categoria>
+    </marcadores>
+</plato>
+<plato tipo="hamburguesas">
+    <nombre>The Triple Threat (3 Carnes)</nombre>
+    <precio>18,50€</precio>
+    <descripcion>Tres discos de 100g, triple cheddar, bacon y cebolla caramelizada. Servida con patatas fritas.</descripcion>
+    <calorias>1600 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Sulfitos</categoria>
+    </marcadores>
+</plato>
+<plato tipo="hamburguesas">
+    <nombre>BBQ Pulled Tower</nombre>
+    <precio>15€</precio>
+    <descripcion>Disco de 100g, doble ración de Pulled Pork, aros de cebolla y salsa BBQ. Servida con patatas fritas.</descripcion>
+    <calorias>1250 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Mostaza</categoria>
+        <categoria>Soja</categoria>
+    </marcadores>
+</plato>
+<plato tipo="hamburguesas">
+    <nombre>Truffle Smash &amp; Egg</nombre>
+    <precio>17€</precio>
+    <descripcion>Doble Smash de 100g, huevo frito, queso suizo y Salsa de la Casa trufada. Servida con patatas fritas.</descripcion>
+    <calorias>1260 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Huevo</categoria>
+    </marcadores>
+</plato>
+<plato tipo="hamburguesas">
+    <nombre>The Oklahoma Smash</nombre>
+    <precio>13€</precio>
+    <descripcion>Dos discos de 100g aplastados con cebolla, doble queso y mostaza. Servida con patatas fritas.</descripcion>
+    <calorias>1060 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Mostaza</categoria>
+    </marcadores>
+</plato>
+<plato tipo="hamburguesas">
+    <nombre>Carnivore's Secret</nombre>
+    <precio>16€</precio>
+    <descripcion>Disco de 100g, Pulled Pork, bacon, Provolone y Salsa de la Casa picante. Servida con patatas fritas.</descripcion>
+    <calorias>1280 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegetariano</categoria>
+        <categoria>NO vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Huevo</categoria>
+        <categoria>Soja</categoria>
+    </marcadores>
+</plato>
+<plato tipo="hamburguesas">
+    <nombre>Smash "Green" (Vegetariana)</nombre>
+    <precio>14€</precio>
+    <descripcion>Doble disco vegetal de 100g, queso vegano, vegetales frescos y Salsa de la Casa vegana. Servida con patatas fritas.</descripcion>
+    <calorias>1020 kcal</calorias>
+    <marcadores>
+        <categoria>Gluten</categoria>
+        <categoria>Soja</categoria>
+    </marcadores>
+</plato>
+<plato tipo="postres"><!-- 6 -->
+    <nombre>Classic New York Cheesecake</nombre>
+    <precio>7,5€</precio>
+    <descripcion>Tarta de queso crema densa y cremosa sobre una base crujiente de galleta Graham, servida con un coulis de frutos rojos silvestres.</descripcion>
+    <calorias>650 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Huevo</categoria>
+        <categoria>Lácteos</categoria>
+    </marcadores>
+</plato>
+<plato tipo="postres">
+    <nombre>Warm Brownie &amp; Vanilla Ice Cream</nombre>
+    <precio>6,9€</precio>
+    <descripcion>Brownie de chocolate belga con nueces picadas, servido templado con una bola de helado de vainilla de Madagascar y sirope de chocolate.</descripcion>
+    <calorias>820 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteo</categoria>
+        <categoria>Huevo</categoria>
+        <categoria>Frutos secos</categoria>
+    </marcadores>
+</plato>
+<plato tipo="postres">
+    <nombre>Deep Dish Apple Pie</nombre>
+    <precio>6,5€</precio>
+    <descripcion>Tarta de manzana asada con canela y masa quebrada artesanal.</descripcion>
+    <calorias>550 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lacteos</categoria>
+    </marcadores>
+</plato>
+<plato tipo="postres">
+    <nombre>Red Velvet Cake</nombre>
+    <precio>7,2€</precio>
+    <descripcion>Bizcocho suave de cacao rojizo con glaseado de crema de queso.</descripcion>
+    <calorias>710 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Huevo</categoria>
+    </marcadores>
+</plato>
+<plato tipo="postres">
+    <nombre>Mississippi Mud Pie</nombre>
+    <precio>7,9€</precio>
+    <descripcion>Base de galleta Oreo, mousse de chocolate y nata montada.</descripcion>
+    <calorias>890 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegano</categoria>
+        <categoria>Gluten</categoria>
+        <categoria>Soja</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Huevo</categoria>
+    </marcadores>
+</plato>
+<plato tipo="postres">
+    <nombre>Banana Split Sundae</nombre>
+    <precio>9,5€</precio>
+    <descripcion>Plátano, tres sabores de helado, nata, sirope de caramelo y cacahuetes.</descripcion>
+    <calorias>950 kcal</calorias>
+    <marcadores>
+        <categoria>NO Vegano</categoria>
+        <categoria>Lácteos</categoria>
+        <categoria>Frutos secos</categoria>
+        <categoria>Huevo</categoria>
+    </marcadores>
+</plato>
+
