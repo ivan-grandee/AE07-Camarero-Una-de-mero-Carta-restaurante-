@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menu>
 <titulo>SMOKE HOUSE MENU</titulo>
-<plato tipo="entrantes"><!-- 6 -->
+<plato tipo="entrantes">
+    <foto>./imagenes/nachos_guacamole.jpg</foto>
     <nombre>Nachos con queso cheddar y guacamole</nombre>
     <precio>8€</precio>
     <descripcion>Versión TEX-MEX del plato de orígen Mexicano. Consiste en totopos de maíz fritos, cubiertos con una salsa de queso fundido y acompañados de una crema de aguacate fresca.</descripcion>
@@ -14,6 +15,7 @@
     </marcadores>
 </plato>
 <plato tipo="entrantes">
+    <foto>./imagenes/tiras_pollo.jpg</foto>
     <nombre>Tiras de pollo con queso fundido</nombre>
     <precio>5€</precio>
     <descripcion>Solomillos de pollo marinados, empanados en panko crujiente y cubiertos con una generosa capa de mezcla de quesos mozzarella fundidos.</descripcion>
@@ -26,11 +28,12 @@
         <categoria>Huevo</categoria>
     </marcadores>
 </plato>
-<plato tipo="entrantes">  
+<plato tipo="entrantes">
+    <foto>./imagenes/entrecot_patatas.jpg</foto>
     <nombre>Entrecot (300g) con patatas fritas</nombre>
     <precio>17€</precio>
     <descripcion>Corte seleccionado de lomo alto de ternera a la plancha, servido con patatas cortadas a mano y fritas en aceite de oliva virgen.</descripcion>
-    <calorias>900 kcal </calorias>
+    <calorias>900 kcal</calorias>
     <marcadores>
         <categoria>NO Vegetariano</categoria>
         <categoria>NO vegano</categoria>
@@ -38,6 +41,7 @@
     </marcadores>
 </plato>
 <plato tipo="entrantes">
+    <foto>./imagenes/costillas_barbacoa.webp</foto>
     <nombre>Costillas (450 g) con salsa barbacoa</nombre>
     <precio>19€</precio>
     <descripcion>Costillar de cerdo cocinado a baja temperatura para una textura tierna que se desprende del hueso, lacado con nuestra salsa barbacoa ahumada artesanal.</descripcion>
@@ -50,6 +54,7 @@
     </marcadores>
 </plato>
 <plato tipo="entrantes">
+    <foto>./imagenes/mac_cheese.jpg</foto>
     <nombre>Mac &amp; Cheese al Horno</nombre>
     <precio>15€</precio>
     <descripcion>Pasta 'elbow' envuelta en una sedosa salsa de cuatro quesos, gratinada con una costra de pan rallado y parmesano.</descripcion>
@@ -64,6 +69,7 @@
     </marcadores>
 </plato>
 <plato tipo="entrantes">
+    <foto>./imagenes/buffalo_wings.jpg</foto>
     <nombre>Buffalo Wings</nombre>
     <precio>10€</precio>
     <descripcion>Alitas de pollo fritas al estilo tradicional de Buffalo, bañadas en salsa picante original y servidas con bastoncitos de apio y salsa de queso azul.</descripcion>
@@ -76,7 +82,8 @@
         <categoria>Huevo</categoria>
     </marcadores>
 </plato>
-<plato tipo="hamburguesas"><!-- 8 -->
+<plato tipo="hamburguesas">
+    <foto>./imagenes/burger_og_smash.png</foto>
     <nombre>The OG Smash (Doble)</nombre>
     <precio>13,50 €</precio>
     <descripcion>Dos discos de 100g de ternera, doble cheddar, cebolla picada y Salsa de la Casa. Servida con patatas fritas.</descripcion>
@@ -91,6 +98,7 @@
     </marcadores>
 </plato>
 <plato tipo="hamburguesas">
+    <foto>./imagenes/burger_porky_smash.png</foto>
     <nombre>Porky-Smash Deluxe</nombre>
     <precio>16€</precio>
     <descripcion>Doble disco de 100g, Pulled Pork ahumado, queso Monterrey Jack y pepinillos. Servida con patatas fritas.</descripcion>
@@ -105,6 +113,7 @@
     </marcadores>
 </plato>
 <plato tipo="hamburguesas">
+    <foto>./imagenes/burger_triple_threat.png</foto>
     <nombre>The Triple Threat (3 Carnes)</nombre>
     <precio>18,50€</precio>
     <descripcion>Tres discos de 100g, triple cheddar, bacon y cebolla caramelizada. Servida con patatas fritas.</descripcion>
@@ -118,6 +127,7 @@
     </marcadores>
 </plato>
 <plato tipo="hamburguesas">
+    <foto>./imagenes/burger_bbq_tower.png</foto>
     <nombre>BBQ Pulled Tower</nombre>
     <precio>15€</precio>
     <descripcion>Disco de 100g, doble ración de Pulled Pork, aros de cebolla y salsa BBQ. Servida con patatas fritas.</descripcion>
@@ -132,6 +142,7 @@
     </marcadores>
 </plato>
 <plato tipo="hamburguesas">
+    <foto>./imagenes/burger_truffle_egg.png</foto>
     <nombre>Truffle Smash &amp; Egg</nombre>
     <precio>17€</precio>
     <descripcion>Doble Smash de 100g, huevo frito, queso suizo y Salsa de la Casa trufada. Servida con patatas fritas.</descripcion>
@@ -145,6 +156,7 @@
     </marcadores>
 </plato>
 <plato tipo="hamburguesas">
+    <foto>./imagenes/burger_oklahoma.jpg</foto>
     <nombre>The Oklahoma Smash</nombre>
     <precio>13€</precio>
     <descripcion>Dos discos de 100g aplastados con cebolla, doble queso y mostaza. Servida con patatas fritas.</descripcion>
@@ -158,6 +170,7 @@
     </marcadores>
 </plato>
 <plato tipo="hamburguesas">
+    <foto>./imagenes/burger_carnivore.jpg</foto>
     <nombre>Carnivore's Secret</nombre>
     <precio>16€</precio>
     <descripcion>Disco de 100g, Pulled Pork, bacon, Provolone y Salsa de la Casa picante. Servida con patatas fritas.</descripcion>
@@ -172,6 +185,7 @@
     </marcadores>
 </plato>
 <plato tipo="hamburguesas">
+    <foto>./imagenes/burger_smash_green.jpg</foto>
     <nombre>Smash "Green" (Vegetariana)</nombre>
     <precio>14€</precio>
     <descripcion>Doble disco vegetal de 100g, queso vegano, vegetales frescos y Salsa de la Casa vegana. Servida con patatas fritas.</descripcion>
@@ -181,7 +195,8 @@
         <categoria>Soja</categoria>
     </marcadores>
 </plato>
-<plato tipo="postres"><!-- 6 -->
+<plato tipo="postres">
+    <foto>./imagenes/postre_cheesecake.jpg</foto>
     <nombre>Classic New York Cheesecake</nombre>
     <precio>7,5€</precio>
     <descripcion>Tarta de queso crema densa y cremosa sobre una base crujiente de galleta Graham, servida con un coulis de frutos rojos silvestres.</descripcion>
@@ -194,6 +209,7 @@
     </marcadores>
 </plato>
 <plato tipo="postres">
+    <foto>./imagenes/postre_brownie.webp</foto>
     <nombre>Warm Brownie &amp; Vanilla Ice Cream</nombre>
     <precio>6,9€</precio>
     <descripcion>Brownie de chocolate belga con nueces picadas, servido templado con una bola de helado de vainilla de Madagascar y sirope de chocolate.</descripcion>
@@ -207,6 +223,7 @@
     </marcadores>
 </plato>
 <plato tipo="postres">
+    <foto>./imagenes/postre_apple_pie.jpg</foto>
     <nombre>Deep Dish Apple Pie</nombre>
     <precio>6,5€</precio>
     <descripcion>Tarta de manzana asada con canela y masa quebrada artesanal.</descripcion>
@@ -214,10 +231,11 @@
     <marcadores>
         <categoria>NO Vegano</categoria>
         <categoria>Gluten</categoria>
-        <categoria>Lacteos</categoria>
+        <categoria>Lácteos</categoria>
     </marcadores>
 </plato>
 <plato tipo="postres">
+    <foto>./imagenes/postre_red_velvet.jpg</foto>
     <nombre>Red Velvet Cake</nombre>
     <precio>7,2€</precio>
     <descripcion>Bizcocho suave de cacao rojizo con glaseado de crema de queso.</descripcion>
@@ -230,6 +248,7 @@
     </marcadores>
 </plato>
 <plato tipo="postres">
+    <foto>./imagenes/postre_mud_pie.jpg</foto>
     <nombre>Mississippi Mud Pie</nombre>
     <precio>7,9€</precio>
     <descripcion>Base de galleta Oreo, mousse de chocolate y nata montada.</descripcion>
@@ -243,6 +262,7 @@
     </marcadores>
 </plato>
 <plato tipo="postres">
+    <foto>./imagenes/postre_banana_split.jpg</foto>
     <nombre>Banana Split Sundae</nombre>
     <precio>9,5€</precio>
     <descripcion>Plátano, tres sabores de helado, nata, sirope de caramelo y cacahuetes.</descripcion>
@@ -255,4 +275,3 @@
     </marcadores>
 </plato>
 </menu>
-

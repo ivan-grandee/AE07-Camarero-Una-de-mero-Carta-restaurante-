@@ -1,16 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Enlace a Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title><?php echo htmlspecialchars((string)$xml->titulo); ?></title>
-</head>
-<body>
 <?php
 // Importación del XML
 if (file_exists('./datos/carta.xml')) {
@@ -18,8 +5,38 @@ if (file_exists('./datos/carta.xml')) {
 } else {
     exit('Error abriendo el archivo de datos');
 }
+
+function getIcono(string $cat): string {
+    $cat = strtolower($cat);
+    if (str_contains($cat, 'gluten'))        return '<i class="fas fa-bread-slice"></i> ';
+    if (str_contains($cat, 'lácteo'))        return '<i class="fas fa-cheese"></i> ';
+    if (str_contains($cat, 'huevo'))         return '<i class="fas fa-egg"></i> ';
+    if (str_contains($cat, 'frutos secos'))  return '<i class="fas fa-seedling"></i> ';
+    if (str_contains($cat, 'soja'))          return '<i class="fas fa-leaf"></i> ';
+    if (str_contains($cat, 'apio'))          return '<i class="fas fa-carrot"></i> ';
+    if (str_contains($cat, 'mostaza'))       return '<i class="fas fa-pepper-hot"></i> ';
+    if (str_contains($cat, 'sulfito'))       return '<i class="fas fa-wine-bottle"></i> ';
+    if (str_contains($cat, 'vegano'))        return '<i class="fas fa-spa"></i> ';
+    if (str_contains($cat, 'vegetariano'))   return '<i class="fas fa-apple-alt"></i> ';
+    return '<i class="fas fa-circle"></i> ';
+}
 ?>
-<!-- NAVBAR con categorías -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image" href="imagenes/logo.png">
+
+    <title><?php echo htmlspecialchars((string)$xml->titulo); ?></title>
+</head>
+<body>
+
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php"><?php echo htmlspecialchars((string)$xml->titulo); ?></a>
@@ -34,11 +51,7 @@ if (file_exists('./datos/carta.xml')) {
                     $tipo = (string)$plato['tipo'];
                     if (!in_array($tipo, $aux)) {
                         echo '<li class="nav-item">';
-                        if (isset($_GET['tipo']) && $_GET['tipo'] === $tipo) {
-                            echo '<a class="nav-link active" href="?tipo=' . $tipo . '">' . ucfirst($tipo) . '</a>';
-                        } else {
-                            echo '<a class="nav-link" href="?tipo=' . $tipo . '">' . ucfirst($tipo) . '</a>';
-                        }
+                        echo '<a class="nav-link ' . (isset($_GET['tipo']) && $_GET['tipo'] === $tipo ? 'active' : '') . '" href="?tipo=' . $tipo . '">' . ucfirst($tipo) . '</a>';
                         echo '</li>';
                         array_push($aux, $tipo);
                     }
@@ -55,39 +68,54 @@ if (file_exists('./datos/carta.xml')) {
     <p class="subtitle">ESTABLECIDO EN EL VIEJO OESTE · 1885</p>
 </header>
 
-<!-- TABLA DE PLATOS -->
-<div class="container">
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th>Plato</th>
-                <th>Descripción</th>
-                <th>Precio</th>
-                <th>Calorías</th>
-                <th>Alérgenos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            foreach ($xml->plato as $plato) {
-                if (!isset($_GET['tipo']) || $_GET['tipo'] === (string)$plato['tipo']) {
-                    $marcadores = [];
-                    foreach ($plato->marcadores->categoria as $cat) {
-                        $marcadores[] = htmlspecialchars((string)$cat);
-                    }
+<!-- CARTA -->
+<div class="container carta-container">
+    <div class="menu-grid">
 
-                    echo '<tr>';
-                    echo '<td>' . htmlspecialchars((string)$plato->nombre) . '</td>';
-                    echo '<td>' . htmlspecialchars((string)$plato->descripcion) . '</td>';
-                    echo '<td>' . htmlspecialchars((string)$plato->precio) . '</td>';
-                    echo '<td>' . htmlspecialchars((string)$plato->calorias) . '</td>';
-                    echo '<td>' . implode(', ', $marcadores) . '</td>';
-                    echo '</tr>';
+        <?php
+        foreach ($xml->plato as $plato) {
+            if (!isset($_GET['tipo']) || $_GET['tipo'] === (string)$plato['tipo']) {
+
+                $marcadores = [];
+                foreach ($plato->marcadores->categoria as $cat) {
+                    $marcadores[] = getIcono((string)$cat) . htmlspecialchars((string)$cat);
                 }
+        ?>
+
+        <div class="menu-card">
+            <div class="menu-img">
+                <img src="<?php echo htmlspecialchars((string)$plato->foto); ?>" 
+                     alt="<?php echo htmlspecialchars((string)$plato->nombre); ?>">
+            </div>
+
+            <div class="menu-body">
+                <h2><?php echo htmlspecialchars((string)$plato->nombre); ?></h2>
+
+                <p class="descripcion">
+                    <?php echo htmlspecialchars((string)$plato->descripcion); ?>
+                </p>
+
+                <div class="menu-extra">
+                    <span class="precio">
+                        <?php echo htmlspecialchars((string)$plato->precio); ?>
+                    </span>
+                    <span class="calorias">
+                        <?php echo htmlspecialchars((string)$plato->calorias); ?>
+                    </span>
+                </div>
+
+                <div class="alergenos">
+                    <?php echo implode('<br>', $marcadores); ?>
+                </div>
+            </div>
+        </div>
+
+        <?php
             }
-            ?>
-        </tbody>
-    </table>
+        }
+        ?>
+
+    </div>
 </div>
 
 <!-- FOOTER -->
@@ -95,6 +123,6 @@ if (file_exists('./datos/carta.xml')) {
     <p>&copy; <?php echo date('Y'); ?> Smoke House Saloon - Drink at your own risk</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
